@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import {
-  EmailContainer,
+  EmailContainerForm,
   ImageContainer,
   LandingContainer,
   LandingSection,
@@ -14,6 +14,24 @@ import signUpDesktop from "../../assets/sign-up-desktop.svg";
 import iconList from "../../assets/icon-list.svg";
 
 export const Landing = () => {
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+
+  function onChangeGetEmail(e) {
+    setEmail(e.target.value);
+    console.log(email);
+  }
+
+  function onSubmitForm(e) {
+    e.preventDefault();
+
+    if (email === "") {
+      setError("Please complete email field!");
+    } else if (email.includes("@") === false || email.includes(".") === false) {
+      setError(`Looks like your e-mail address is incomplete. Please check again!`);
+    }
+  }
+
   return (
     <LandingSection>
       <LandingContainer>
@@ -35,11 +53,12 @@ export const Landing = () => {
                 <p>And much more!</p>
               </ParagraphContainer>
             </TextContainer>
-            <EmailContainer>
+            <EmailContainerForm onSubmit={onSubmitForm}>
               <label>Email Address</label>
-              <input type="email" placeholder="" />
+              <input onChange={onChangeGetEmail} type="text" placeholder="" />
+              <p style={{ color: "red", margin: "10px 0" }}>{error}</p>
               <button>Subscribe to monthly newsletter</button>
-            </EmailContainer>
+            </EmailContainerForm>
           </SubscribeParentContainer>
         </SubscribeContainer>
         <ImageContainer>

@@ -15,6 +15,7 @@ export const LandingContainer = styled.div`
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 12px;
 `;
 
 export const SubscribeContainer = styled.div`
@@ -60,7 +61,7 @@ export const ParagraphContainer = styled.div`
   }
 `;
 
-export const EmailContainer = styled.div`
+export const EmailContainerForm = styled.form`
   display: flex;
   flex-direction: column;
   padding: 24px 12px;
