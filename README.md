@@ -1,8 +1,9 @@
-# React + Vite
+# Newsletter example
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project made with React + Vite 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Screenshots
+![SS1](https://github.com/andreicatrina/newsletter-app/assets/90219924/28377349-376d-4c08-abbf-a9b244b2d5a7)
+![SS2](https://github.com/andreicatrina/newsletter-app/assets/90219924/da909d5b-e658-4d27-9978-b94f0644213f)
+![SS3](https://github.com/andreicatrina/newsletter-app/assets/90219924/1516c34b-052a-467e-9c08-f6ae3edfd103)
+![SS4](https://github.com/andreicatrina/newsletter-app/assets/90219924/deae0e8d-2ed4-4cf9-acb4-304d4cd92e31)
