@@ -6,16 +6,18 @@ export const LandingSection = styled.section`
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: #023047;
 `;
 
 export const LandingContainer = styled.div`
   display: flex;
   justify-content: center;
   gap: 24px;
-  width: 100%;
-  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #fff;
 `;
 
 export const SubscribeContainer = styled.div`
@@ -97,3 +99,46 @@ export const EmailContainerForm = styled.form`
 `;
 
 export const ImageContainer = styled.div``;
+
+export const SuccessContainer = styled.div`
+  width: 100%;
+  max-width: 400px;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #fff;
+`;
+
+export const SuccessParent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  button {
+    height: 40px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 6px;
+    background-color: #023047;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+`;
